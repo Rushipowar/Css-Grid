@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        .container{
+           display: grid;
+           justify-content: center;
+           margin-top: 200px;
+           gap: 15px;
+           grid-template-columns: 100px 100px 100px;
+        }
+        .box {
+           background-color: bisque;
+           color: white;
+           padding: 25px;
+           font-size: 18px;
+           border-radius: 6px;
+           color: black;
+        }
+        .a{
+           grid-row: 1;
+           grid-column: 1/3;
+        }
+        .b{
+            grid-row: 1/3;
+            grid-column: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        body {
+            margin: 40px;
+        }
+        .box {
+            background-color: #444;
+            color: white;
+            padding: 30px;
+            font-weight: 600;
+            border-radius: 6px;
+            order: 1;
+        }
+       .box:nth-child(even) {
+            background-color: #ccc;
+            color: #000;
+        }
+       .container {
+           width: 700px;
+           display: grid;
+           grid-template-columns: repeat(6, 100px);
+           grid-gap: 15px;
+        }
+        .box .one {
+           order: 3;
+        }
+        .box .two {
+           order: 6;
+        }
+        .box .three {
+           order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box one">3</div>
+       <div class="box two">4</div>
+       <div class="box three">5</div>
+       <div class="box four">6</div>
+       <div class="box five">7</div>
+       <div class="box six">8</div>
+       <div class="box seven">1</div>
+       <div class="box eight">2</div>
+    </div>
+</body>
+</html>
